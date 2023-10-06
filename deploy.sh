@@ -21,3 +21,5 @@ helm repo update
 helm -n mojaloop install backend mojaloop/example-mojaloop-backend --create-namespace
 
 helm --namespace mojaloop install dev mojaloop/mojaloop
+
+alias k-kubectl
