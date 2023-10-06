@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # minikube
-minikube start --memory --cpus 3
+minikube start --memory 10000 --cpus 3
 
 # helm
 helm repo add stable https://charts.helm.sh/stable
