@@ -24,4 +24,4 @@ sleep 20s
 
 helm --namespace mojaloop install dev mojaloop/mojaloop
 
-alias k-kubectl
+alias k=kubectl
