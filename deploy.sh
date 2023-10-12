@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # minikube
-minikube start --memory 10000 --cpus 3
+minikube start --memory 14000 --cpus 3
 
 # helm
 helm repo add stable https://charts.helm.sh/stable
@@ -20,8 +20,8 @@ helm repo update
 
 helm -n mojaloop install backend mojaloop/example-mojaloop-backend --create-namespace
 
-sleep 20s
+# sleep 40s
 
-helm --namespace mojaloop install dev mojaloop/mojaloop
+# helm --namespace mojaloop install dev mojaloop/mojaloop
 
 alias k=kubectl
